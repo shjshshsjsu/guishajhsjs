@@ -33,7 +33,7 @@ closebutton.Size = UDim2.new(0, 45, 0, 30)
 closebutton.Text = "X"
 closebutton.TextSize = 30
 closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-closebutton.Position = UDim2.new(0, 20, 0, -15)
+closebutton.Position = UDim2.new(0, 0.50, 0, -10)
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
