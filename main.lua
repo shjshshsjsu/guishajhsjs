@@ -37,7 +37,6 @@ closebutton.TextSize = 30
 closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 closebutton.Position = UDim2.new(0, 25, 0, -50)
 closebutton.background-trancparency = 1
-closebutton.border-trancparency = 1
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
