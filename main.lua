@@ -35,7 +35,7 @@ closebutton.Size = UDim2.new(1, 0, 0, 0)
 closebutton.Text = "X"
 closebutton.TextSize = 30
 closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-closebutton.Position = UDim2.new(0, 25, 0, -50)
+closebutton.Position = UDim2.new(1, -45, 0, 0)
 closebutton.BackgroundTransparency = 1
 
 -- Yan Yana
