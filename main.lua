@@ -28,7 +28,6 @@ Frame.Style = Enum.FrameStyle.RobloxRound
 
 closebutton.Name = "Close"
 closebutton.Parent = Frame
-closebutton.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 30)
 closebutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
