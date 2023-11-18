@@ -11,7 +11,6 @@ local closebutton = Instance.new("TextButton")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.ResetOnSpawn = false
 main.IgnoreGuiInset = true -- Ekran kenarlarını dikkate alma
 main.DisplayOrder = 999 -- Ekran düzenleme sırası
