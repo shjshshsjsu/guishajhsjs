@@ -28,12 +28,16 @@ Frame.Style = Enum.FrameStyle.RobloxRound
 
 closebutton.Name = "Close"
 closebutton.Parent = Frame
+closebutton.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+closebutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 30)
 closebutton.Text = "X"
 closebutton.TextSize = 30
 closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-closebutton.Position = UDim2.new(0, 0.50, 0, -10)
+closebutton.Position = UDim2.new(0, 25, 0, -50)
+closebutton.background-trancparency = 1
+closebutton.border-trancparency = 1
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
