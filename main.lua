@@ -38,15 +38,16 @@ closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 closebutton.Position = UDim2.new(1, -closebutton.Size.X.Offset, 0, 0)
 closebutton.BackgroundTransparency = 1
 
-
+guiname.Name = "guiname"
 guiname.Parent = Frame
 guiname.BackgroundColor3 = Color3.new(1, 1, 1)  
 guiname.Position = UDim2.new(0.5, 0, 0, 0)  
 guiname.Size = UDim2.new(0, 200, 0, 50)  
 guiname.Text = "Script Name"
 guiname.TextSize = 24  
-guiname.TextColor3 = Color3.new(1, 1, 1)  
-guinamr.BackgroundTransparency = 1
+guiname.Font = Enum.Font.SourceSans
+guiname.TextColor3 = Color3.new(255, 255, 255)  
+guiname.BackgroundTransparency = 1
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
