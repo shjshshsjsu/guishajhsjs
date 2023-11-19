@@ -82,7 +82,7 @@ toogle1.Parent = Frame
 toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
 toogle1.Font = Enum.Font.SourceSans
 toogle1.Size = UDim2.new(0, 187, 0, 30)
-toogle1.Image = "rbxassetid://933851148"
+toogle1.Image = "rbxthumb://type=Asset&id=933851148"
 uiCorner2.Parent = toogle1 -- Kenarları Yumuşatma
 
 -- Yan Yana
