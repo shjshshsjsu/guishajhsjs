@@ -40,11 +40,11 @@ closebutton.BackgroundTransparency = 1
 
 guiname.Name = "guiname"
 guiname.Parent = Frame
-guiname.Position = UDim2.new(0, 40, 0, 0)
+guiname.Position = UDim2.new(0, 45, 0, 0)
 guiname.BackgroundColor3 = Color3.new(1, 1, 1)  
 guiname.Size = UDim2.new(0, 50, 0, 50)  
 guiname.Text = "Script Name"
-guiname.TextSize = 35  
+guiname.TextSize = 30  
 guiname.Font = Enum.Font.SourceSans
 guiname.TextColor3 = Color3.new(255, 255, 255)  
 guiname.BackgroundTransparency = 1
