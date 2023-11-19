@@ -90,7 +90,7 @@ uiCorner2.Parent = toogle1 -- Kenarları Yumuşatma
 button1.Position = UDim2.new(0, 0, 0, 60)
  -- AutoClick.Position = UDim2.new(0, 110, 0, 60)
 
-Toggle Yan Yana
+--Toggle Yan Yana
  toogle1.Position = UDim2.new(0, 0, 0, 75)
 
 -- Bildirim
