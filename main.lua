@@ -86,7 +86,7 @@ toogle1.Image = "https://www.roblox.com/asset/?id=933851148"
 uiCorner2.Parent = toogle1 -- Kenarları Yumuşatma
 
 -- Yan Yana
-- Button Yan Yana
+-- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
  -- AutoClick.Position = UDim2.new(0, 110, 0, 60)
 
