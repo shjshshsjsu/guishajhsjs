@@ -86,7 +86,7 @@ button2.Parent = Frame
 button2.BackgroundColor3 = Color3.new(0, 0, 0)  
 button2.Font = Enum.Font.SourceSans
 button2.Size = UDim2.new(0, 187, 0, 30)
-button2.Text = "Button 1"
+button2.Text = "Button 2"
 button2.TextSize = 20
 button2.TextColor3 = Color3.new(1, 1, 1)  
 uiCorner2.Parent = button2 -- Kenarları Yumuşatma
@@ -103,7 +103,7 @@ uiCorner2.Parent = button2 -- Kenarları Yumuşatma
 -- Yan Yana
 -- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
- button2.Position = UDim2.new(0, 110, 0, 60)
+ button2.Position = UDim2.new(0, 140, 0, 60)
 
 --Toggle Yan Yana
  --toogle1.Position = UDim2.new(0, 0, 0, 75)
