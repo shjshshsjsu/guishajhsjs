@@ -213,5 +213,4 @@ line2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 line2.Position = UDim2.new(0, 0, 0, 40)
 line2.Name = "Line"
 line2.Parent = Frame2
-guiname.BackgroundTransparency = 1
 
