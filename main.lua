@@ -10,6 +10,7 @@ local Frame = Instance.new("Frame")
 local closebutton = Instance.new("TextButton")
 local guiname = Instance.new("TextLabel")
 local line = Instance.new("Frame")
+local button1 = Instance.new("TextButton")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -59,6 +60,20 @@ line.BorderColor3 = Color3.fromRGB(0, 0, 0)
 line.Position = UDim2.new(0, 0, 0, 40)
 line.Name = "Line"
 line.Parent = Frame
+
+-- Butonlar
+
+-- Button 1
+button1.Name = "Button1"
+button1.Parent = Frame
+button1.BackgroundColor3 = Color3.new(0, 0, 0)  -- Siyah renk
+button1.BorderColor3 = Color3.new(1, 1, 1)  -- Beyaz renk
+button1.Font = Enum.Font.SourceSans
+button1.Size = UDim2.new(1, 0, 1, 0)
+button1.Text = "Button 1"
+button1.TextSize = 20
+button1.TextColor3 = Color3.new(1, 1, 1)  -- Beyaz renk
+button1.Style = Enum.FrameStyle.RobloxRound
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
