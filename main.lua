@@ -82,14 +82,16 @@ toogle1.Parent = Frame
 toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
 toogle1.Font = Enum.Font.SourceSans
 toogle1.Size = UDim2.new(0, 187, 0, 30)
-toogle1.Text = "Button 1"
-toogle1.TextSize = 20
-toogle1.TextColor3 = Color3.new(1, 1, 1)  
+toogle1.İmage = "https://www.roblox.com/asset/?id=933851148"
 uiCorner2.Parent = toogle1 -- Kenarları Yumuşatma
 
 -- Yan Yana
+- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
  -- AutoClick.Position = UDim2.new(0, 110, 0, 60)
+
+Toggle Yan Yana
+ toogle1.Position = UDim2.new(0, 0, 0, 75)
 
 -- Bildirim
 game:GetService("StarterGui"):SetCore("SendNotification", {
