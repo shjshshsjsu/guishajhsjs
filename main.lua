@@ -9,6 +9,7 @@ local main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local closebutton = Instance.new("TextButton")
 local guiname = Instance.new("TextLabel")
+local line = Instance.new("Frame")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -48,6 +49,15 @@ guiname.TextSize = 30
 guiname.Font = Enum.Font.SourceSans
 guiname.TextColor3 = Color3.new(255, 255, 255)  
 guiname.BackgroundTransparency = 1
+
+-- LİNE (CİZGİ)
+
+line.BorderSizePixel = 0
+line.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
+line.Size = UDim2.new(0, 718, 0, -2)
+line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+line.Position = UDim2.new(0, 290, 0, 229)
+line.Name = "Line"
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
