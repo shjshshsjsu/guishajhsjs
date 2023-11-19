@@ -103,7 +103,7 @@ uiCorner2.Parent = button2 -- Kenarları Yumuşatma
 -- Yan Yana
 -- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
- button2.Position = UDim2.new(0, 160, 0, 60)
+ button2.Position = UDim2.new(0, 170, 0, 60)
 
 --Toggle Yan Yana
  --toogle1.Position = UDim2.new(0, 0, 0, 75)
