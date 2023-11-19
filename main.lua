@@ -66,18 +66,17 @@ line.Parent = Frame
 -- Button 1
 button1.Name = "Button1"
 button1.Parent = Frame
-button1.BackgroundColor3 = Color3.new(0, 0, 0)  -- Siyah renk
-button1.BorderColor3 = Color3.new(1, 1, 1)  -- Beyaz renk
+button1.BackgroundColor3 = Color3.new(0, 0, 0)  
 button1.Font = Enum.Font.SourceSans
 button1.Size = UDim2.new(0, 187, 0, 30)
 button1.Text = "Button 1"
 button1.TextSize = 20
-button1.TextColor3 = Color3.new(1, 1, 1)  -- Beyaz renk
+button1.TextColor3 = Color3.new(1, 1, 1)  
 button1.Style = Enum.FrameStyle.RobloxRound
 
 -- Yan Yana
--- AutoParry.Position = UDim2.new(0, 0, 0, 0)
- -- AutoClick.Position = UDim2.new(0, 110, 0, 0)
+button1.Position = UDim2.new(0, 0, 0, 60)
+ -- AutoClick.Position = UDim2.new(0, 110, 0, 60)
 
 -- Bildirim
 game:GetService("StarterGui"):SetCore("SendNotification", {
