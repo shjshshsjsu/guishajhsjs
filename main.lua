@@ -33,7 +33,7 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
 Frame.Size = UDim2.new(0.5, 0, 0.5, 0)
 Frame.Style = Enum.FrameStyle.RobloxRound
-Frame.Visible = false
+Frame.Visible = true
 
 
 closebutton.Name = "Close"
@@ -127,8 +127,8 @@ closebutton.MouseButton1Click:Connect(function()
 end)
 
 button2.MouseButton1Click:Connect(function()
-    Frame2.Visible = false
-    Frame.Visible = true
+    Frame2.Visible = true
+    Frame.Visible = false
 end)
 
 --toogle1.MouseButton1Click:Connect(function()
@@ -165,7 +165,36 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
         updateInput(input)
     end
 end)
+local function updateInput(input)
+    local delta = input.Position - dragStart
+    Frame2.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
 
+Frame2.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = Frame.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+Frame2.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+    if input == dragInput and dragging then
+        updateInput(input)
+    end
+end)
 --Frame 2
 local Frame2 = Instance.new("Frame")
 local closebutton2 = Instance.new("TextButton")
@@ -178,7 +207,7 @@ Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame2.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
 Frame2.Size = UDim2.new(0.5, 0, 0.5, 0)
 Frame2.Style = Enum.FrameStyle.RobloxRound
-Frame2.Visible = true
+Frame2.Visible = false
 
 
 closebutton2.Name = "Close2"
