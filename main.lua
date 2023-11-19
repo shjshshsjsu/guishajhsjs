@@ -82,7 +82,7 @@ toogle1.Parent = Frame
 toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
 toogle1.Font = Enum.Font.SourceSans
 toogle1.Size = UDim2.new(0, 187, 0, 30)
-toogle1.İmage = "https://www.roblox.com/asset/?id=933851148"
+toogle1.Image = "https://www.roblox.com/asset/?id=933851148"
 uiCorner2.Parent = toogle1 -- Kenarları Yumuşatma
 
 -- Yan Yana
@@ -108,6 +108,9 @@ closebutton.MouseButton1Click:Connect(function()
     main:Destroy()
 end)
 
+toogle1.MouseButton1Click:Connect(function()
+    toogle1.Image = "https://www.roblox.com/asset/?id=933851151"
+end)
 
 local function updateInput(input)
     local delta = input.Position - dragStart
