@@ -56,7 +56,7 @@ line.BorderSizePixel = 0
 line.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
 line.Size = UDim2.new(1, 0, 0, -2)
 line.BorderColor3 = Color3.fromRGB(0, 0, 0)
-line.Position = UDim2.new(0, 0, 0, 20)
+line.Position = UDim2.new(0, 0, 0, 30)
 line.Name = "Line"
 line.Parent = Frame
 
