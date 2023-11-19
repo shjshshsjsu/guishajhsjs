@@ -8,6 +8,7 @@ local startPos
 local main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local closebutton = Instance.new("TextButton")
+local guiname = Instance.new("TextLabel")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -36,6 +37,16 @@ closebutton.TextSize = 30
 closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 closebutton.Position = UDim2.new(1, -closebutton.Size.X.Offset, 0, 0)
 closebutton.BackgroundTransparency = 1
+
+
+guiname.Parent = Frame
+guiname.BackgroundColor3 = Color3.new(1, 1, 1)  
+guiname.Position = UDim2.new(0.5, 0, 0, 0)  
+guiname.Size = UDim2.new(0, 200, 0, 50)  
+guiname.Text = "Script Name"
+guiname.TextSize = 24  
+guiname.TextColor3 = Color3.new(1, 1, 1)  
+guinamr.BackgroundTransparency = 1
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
