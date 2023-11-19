@@ -58,6 +58,7 @@ line.Size = UDim2.new(0, 718, 0, -2)
 line.BorderColor3 = Color3.fromRGB(0, 0, 0)
 line.Position = UDim2.new(0, 290, 0, 229)
 line.Name = "Line"
+line.Parent = Frame
 
 -- Yan Yana
 -- AutoParry.Position = UDim2.new(0, 0, 0, 0)
