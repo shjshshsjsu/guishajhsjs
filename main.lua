@@ -41,7 +41,7 @@ closebutton.BackgroundTransparency = 1
 
 guiname.Name = "guiname"
 guiname.Parent = Frame
-guiname.Position = UDim2.new(0, 45, 0, -10)
+guiname.Position = UDim2.new(0, 45, 0, -20)
 guiname.BackgroundColor3 = Color3.new(1, 1, 1)  
 guiname.Size = UDim2.new(0, 50, 0, 50)  
 guiname.Text = "Script Name"
@@ -56,7 +56,7 @@ line.BorderSizePixel = 0
 line.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
 line.Size = UDim2.new(1, 0, 0, -2)
 line.BorderColor3 = Color3.fromRGB(0, 0, 0)
-line.Position = UDim2.new(0, 0, 0, 30)
+line.Position = UDim2.new(0, 0, 0, 40)
 line.Name = "Line"
 line.Parent = Frame
 
