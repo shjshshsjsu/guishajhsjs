@@ -5,6 +5,7 @@ local dragStart
 local startPos
 
 -- UI Elemanları
+--Frame 1
 local main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local closebutton = Instance.new("TextButton")
@@ -16,6 +17,8 @@ local button2 = Instance.new("TextButton")
 local uiCorner2 = Instance.new("UICorner")
 --local toogle1 = Instance.new("TextButton")
 --local uiCorner2 = Instance.new("UICorner")
+
+
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -30,7 +33,7 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
 Frame.Size = UDim2.new(0.5, 0, 0.5, 0)
 Frame.Style = Enum.FrameStyle.RobloxRound
-
+Frame.Visible = false
 
 
 closebutton.Name = "Close"
@@ -123,6 +126,11 @@ closebutton.MouseButton1Click:Connect(function()
     main:Destroy()
 end)
 
+button2.MouseButton1Click:Connect(function()
+    Frame2.Visible = false
+    Frame.Visible = true
+end)
+
 --toogle1.MouseButton1Click:Connect(function()
  --   toogle1.Image = "rbxassetid://933851151"
 --end)
@@ -157,3 +165,53 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
         updateInput(input)
     end
 end)
+
+--Frame 2
+local Frame2 = Instance.new("Frame")
+local closebutton2 = Instance.new("TextButton")
+local guiname2 = Instance.new("TextLabel")
+local line2 = Instance.new("Frame")
+
+Frame2.Parent = main
+Frame2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
+Frame2.Size = UDim2.new(0.5, 0, 0.5, 0)
+Frame2.Style = Enum.FrameStyle.RobloxRound
+Frame2.Visible = true
+
+
+closebutton2.Name = "Close2"
+closebutton2.Parent = Frame2
+closebutton2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+closebutton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closebutton2.Font = "SourceSans"
+closebutton2.Size = UDim2.new(0, 45, 0, 30)
+closebutton2.Text = "X"
+closebutton2.TextSize = 30
+closebutton2.TextColor3 = Color3.fromRGB(255, 255, 255)
+closebutton2.Position = UDim2.new(1, -closebutton.Size.X.Offset, 0, 0)
+closebutton2.BackgroundTransparency = 1
+
+guiname2.Name = "guiname2"
+guiname2.Parent = Frame2
+guiname2.Position = UDim2.new(0, 45, 0, -12)
+guiname2.BackgroundColor3 = Color3.new(1, 1, 1)  
+guiname2.Size = UDim2.new(0, 50, 0, 50)  
+guiname2.Text = "Sayfa2"
+guiname2.TextSize = 30  
+guiname2.Font = Enum.Font.SourceSans
+guiname2.TextColor3 = Color3.new(255, 255, 255)  
+guiname2.BackgroundTransparency = 1
+
+-- LİNE (CİZGİ)
+
+line2.BorderSizePixel = 0
+line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line2.Size = UDim2.new(1, 0, 0, -2)
+line2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+line2.Position = UDim2.new(0, 0, 0, 40)
+line2.Name = "Line"
+line2.Parent = Frame2
+guiname.BackgroundTransparency = 1
+
