@@ -127,8 +127,8 @@ closebutton.MouseButton1Click:Connect(function()
 end)
 
 button2.MouseButton1Click:Connect(function()
-    Frame2.Visible = true
-    Frame.Visible = false
+    Frame2.Visible = false
+    Frame.Visible = true
 end)
 
 --toogle1.MouseButton1Click:Connect(function()
