@@ -11,6 +11,7 @@ local closebutton = Instance.new("TextButton")
 local guiname = Instance.new("TextLabel")
 local line = Instance.new("Frame")
 local button1 = Instance.new("TextButton")
+local uiCorner = Instance.new("UICorner")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -72,7 +73,7 @@ button1.Size = UDim2.new(0, 187, 0, 30)
 button1.Text = "Button 1"
 button1.TextSize = 20
 button1.TextColor3 = Color3.new(1, 1, 1)  
-button1.Style = Enum.FrameStyle.RobloxRound
+uiCorner.Parent = button1 -- Kenarları Yumuşatma 
 
 -- Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
