@@ -78,7 +78,7 @@ button1.Text = "Button 1"
 button1.TextSize = 20
 button1.TextColor3 = Color3.new(1, 1, 1)  
 uiCorner.Parent = button1 -- Kenarları Yumuşatma
-
+button1.BorderColor3 = Color3.new(255, 255, 255)
 -- Button 2
 
 button2.Name = "Button2"
@@ -90,7 +90,7 @@ button2.Text = "Button 2"
 button2.TextSize = 20
 button2.TextColor3 = Color3.new(1, 1, 1)  
 uiCorner2.Parent = button2 -- Kenarları Yumuşatma
-
+button2.BorderColor3 = Color3.new(255, 255, 255)
 
 --toogle1.Name = "toogle1"
 --toogle1.Parent = Frame
@@ -103,7 +103,7 @@ uiCorner2.Parent = button2 -- Kenarları Yumuşatma
 -- Yan Yana
 -- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
- button2.Position = UDim2.new(0, 170, 0, 60)
+ button2.Position = UDim2.new(0, 180, 0, 60)
 
 --Toggle Yan Yana
  --toogle1.Position = UDim2.new(0, 0, 0, 75)
