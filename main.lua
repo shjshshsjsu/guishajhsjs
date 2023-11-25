@@ -8,16 +8,19 @@ local startPos
 --Frame 1
 local main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local line = Instance.new("Frame")
+ 
 local closebutton = Instance.new("TextButton")
 local guiname = Instance.new("TextLabel")
-local line = Instance.new("Frame")
+
 local button1 = Instance.new("TextButton")
 local uiCorner = Instance.new("UICorner")
 local button2 = Instance.new("TextButton")
 local uiCorner2 = Instance.new("UICorner")
---local toogle1 = Instance.new("TextButton")
---local uiCorner2 = Instance.new("UICorner")
 
+local toogle1 = Instance.new("TextButton")
+local uiCorner3 = Instance.new("UICorner")
+local tooglename = Instance.new("TextLabel")
 
 
 main.Name = "main"
@@ -95,13 +98,27 @@ button2.TextColor3 = Color3.new(1, 1, 1)
 uiCorner2.Parent = button2 -- Kenarları Yumuşatma
 button2.BorderColor3 = Color3.new(255, 255, 255)
 
---toogle1.Name = "toogle1"
---toogle1.Parent = Frame
---toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
---toogle1.Font = Enum.Font.SourceSans
---toogle1.Size = UDim2.new(0, 187, 0, 30)
---toogle1.Image = "rbxthumb://type=Asset&id=933851148"
---uiCorner2.Parent = toogle1 -- Kenarları Yumuşatma
+toogle1.Name = "toogle1"
+toogle1.Parent = Frame
+toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
+toogle1.Font = Enum.Font.SourceSans
+toogle1.Size = UDim2.new(0, 30, 0, 30)
+toogle1.Text = ""
+toogle1.TextSize = 20
+toogle1.TextColor3 = Color3.new(1, 1, 1)  
+uiCorner3.Parent = toogle1 -- Kenarları Yumuşatma
+toogle1.BorderColor3 = Color3.new(255, 255, 255)
+
+tooglename.Name = "tooglename"
+tooglename.Parent = Frame
+tooglename.Position = UDim2.new(0, 0, 0, 80)
+tooglename.BackgroundColor3 = Color3.new(1, 1, 1)  
+tooglename.Size = UDim2.new(0, 50, 0, 50)  
+tooglename.Text = "Toogle 1"
+tooglename.TextSize = 15
+tooglename.Font = Enum.Font.SourceSans
+tooglename.TextColor3 = Color3.new(255, 255, 255)  
+tooglename.BackgroundTransparency = 1
 
 -- Yan Yana
 -- Button Yan Yana
@@ -109,7 +126,7 @@ button1.Position = UDim2.new(0, 0, 0, 60)
  button2.Position = UDim2.new(0, 180, 0, 60)
 
 --Toggle Yan Yana
- --toogle1.Position = UDim2.new(0, 0, 0, 75)
+ toogle1.Position = UDim2.new(0, 180, 0, 80)
 
 -- Bildirim
 game:GetService("StarterGui"):SetCore("SendNotification", {
