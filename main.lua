@@ -149,11 +149,12 @@ local toogle1 = false
 toogle1.MouseButton1Click:Connect(function()
     toogle1 = not toogle1
     toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
-  toogle1.Text = ""
+    toogle1.Text = ""
     if toogle1 then
         toogle1.BackgroundColor3 = Color3.new(0, 255, 0)  
-  toogle1.Text = "✓"
-  end)
+        toogle1.Text = "✓"
+    end
+end)
 
 local function updateInput(input)
     local delta = input.Position - dragStart
