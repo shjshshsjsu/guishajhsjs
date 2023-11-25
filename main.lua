@@ -126,7 +126,7 @@ button1.Position = UDim2.new(0, 0, 0, 60)
  button2.Position = UDim2.new(0, 180, 0, 60)
 
 --Toggle Yan Yana
- toogle1.Position = UDim2.new(0, 180, 0, 80)
+ toogle1.Position = UDim2.new(0, 80, 0, 80)
 
 -- Bildirim
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -156,10 +156,6 @@ toogle1.MouseButton1Click:Connect(function()
     end
 end)
 
-local function updateInput(input)
-    local delta = input.Position - dragStart
-    Frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-end
 
 Frame.InputBegan:Connect(function(input)
     if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
@@ -175,8 +171,12 @@ Frame.InputBegan:Connect(function(input)
     end
 end)
 
+local function updateInput(input)
+    local delta = input.Position - dragStart
+    Frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
 Frame.InputChanged:Connect(function(input)
-    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
         dragInput = input
         updateInput(dragInput)
     end
