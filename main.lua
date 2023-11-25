@@ -132,9 +132,14 @@ button1.Position = UDim2.new(0, 0, 0, 60)
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "GUİ",
     Text = "By Wreston",
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+    Duration = 5,
+    Style = {
+        BackgroundColor = Color3.fromRGB(54, 54, 54),  
+        TextColor = Color3.fromRGB(0, 0, 0),    
+        BorderColor = Color3.fromRGB(1, 1, 1),       
+    }
 })
-Duration = 5;
 
 
 
