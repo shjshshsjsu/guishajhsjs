@@ -126,7 +126,7 @@ button1.Position = UDim2.new(0, 0, 0, 60)
  button2.Position = UDim2.new(0, 180, 0, 60)
 
 --Toggle Yan Yana
- toogle1.Position = UDim2.new(0, 80, 0, 80)
+ toogle1.Position = UDim2.new(0, 80, 0, 90)
 
 -- Bildirim
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -143,14 +143,14 @@ closebutton.MouseButton1Click:Connect(function()
     main:Destroy()
 end)
 
-local toogle1 = false
+local toogle = false
 
 
 toogle1.MouseButton1Click:Connect(function()
-    toogle1 = not toogle1
+    toogle = not toogle
     toogle1.BackgroundColor3 = Color3.new(0, 0, 0)  
     toogle1.Text = ""
-    if toogle1 then
+    if toogle then
         toogle1.BackgroundColor3 = Color3.new(0, 255, 0)  
         toogle1.Text = "✓"
     end
