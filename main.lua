@@ -12,6 +12,10 @@ local line = Instance.new("Frame")
  
 local closebutton = Instance.new("TextButton")
 local guiname = Instance.new("TextLabel")
+local notification = Instance.new("ScreenGui")
+notification.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local title = Instance.new("TextLabel")
+local noficationframe = Instance.new("Frame")
 
 local button1 = Instance.new("TextButton")
 local uiCorner = Instance.new("UICorner")
@@ -120,28 +124,22 @@ tooglename.Font = Enum.Font.SourceSans
 tooglename.TextColor3 = Color3.new(255, 255, 255)  
 tooglename.BackgroundTransparency = 1
 
+
+noficationframe.Size = UDim2.new(0, 200, 0, 0)
+noficationframe.Position = UDim2.new(0.5, -100, 0.8, 0)
+noficationframe.BackgroundColor3 = Color3.fromRGB(255, 0, 0)  -- Arkaplan rengi
+noficationframe.BorderSizePixel = 2
+noficationframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
 -- Yan Yana
 -- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
  button2.Position = UDim2.new(0, 180, 0, 60)
 
---Toggle Yan Yana
+--Toggle Yan Ynoficationana
  toogle1.Position = UDim2.new(0, 85, 0, 94)
 
 -- Bildirim
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "GUİ",
-    Text = "By Wreston",
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
-    Duration = 5,
-    Style = {
-        BackgroundColor = Color3.fromRGB(54, 54, 54),  
-        TextColor = Color3.fromRGB(0, 0, 0),    
-        BorderColor = Color3.fromRGB(1, 1, 1),       
-    }
-})
-
-
 
 -- Close Button
 closebutton.MouseButton1Click:Connect(function()
@@ -186,3 +184,29 @@ Frame.InputChanged:Connect(function(input)
         updateInput(dragInput)
     end
 end)
+
+-- Bildirim
+local title = Instance.new("TextLabel")
+title.Parent = noficationframe
+title.Size = UDim2.new(1, 0, 0.5, 0)
+title.Text = "Script Name"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Metin rengi
+title.Font = Enum.Font.SourceSansBold
+title.TextSize = 24
+
+local text = Instance.new("TextLabel")
+text.Parent = noficationframe
+text.Size = UDim2.new(1, 0, 0.5, 0)
+text.Position = UDim2.new(0, 0, 0.5, 0)
+text.Text = "By Wreston"
+text.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Metin rengi
+text.Font = Enum.Font.SourceSans
+text.TextSize = 18
+
+notification.Enabled = true
+
+noficationframe:TweenSize(UDim2.new(0, 200, 0, 100), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
+wait(5)
+noficationframe:TweenSize(UDim2.new(0, 200, 0, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.5, true)
+wait(0.5)
+notification:Destroy()
