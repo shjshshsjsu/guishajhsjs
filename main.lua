@@ -15,7 +15,7 @@ local guiname = Instance.new("TextLabel")
 local notification = Instance.new("ScreenGui")
 notification.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 local title = Instance.new("TextLabel")
-local noficationframe = Instance.new("Frame")
+local notificationframe = Instance.new("Frame")
 
 local button1 = Instance.new("TextButton")
 local uiCorner = Instance.new("UICorner")
@@ -125,11 +125,11 @@ tooglename.TextColor3 = Color3.new(255, 255, 255)
 tooglename.BackgroundTransparency = 1
 
 
-noficationframe.Size = UDim2.new(0, 200, 0, 0)
-noficationframe.Position = UDim2.new(0.5, -100, 0.8, 0)
-noficationframe.BackgroundColor3 = Color3.fromRGB(255, 0, 0)  -- Arkaplan rengi
-noficationframe.BorderSizePixel = 2
-noficationframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+notificationframe.Size = UDim2.new(0, 200, 0, 0)
+notificationframe.Position = UDim2.new(0.5, -100, 0.8, 0)
+notificationframe.BackgroundColor3 = Color3.fromRGB(255, 0, 0)  -- Arkaplan rengi
+notificationframe.BorderSizePixel = 2
+notificationframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
 
 -- Yan Yana
 -- Button Yan Yana
@@ -186,15 +186,15 @@ Frame.InputChanged:Connect(function(input)
 end)
 
 -- Bildirim
-local title = Instance.new("TextLabel")
-title.Parent = noficationframe
+
+title.Parent = notificationframe
 title.Size = UDim2.new(1, 0, 0.5, 0)
 title.Text = "Script Name"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Metin rengi
 title.Font = Enum.Font.SourceSansBold
 title.TextSize = 24
 
-text.Parent = noficationframe
+text.Parent = notificationframe
 text.Size = UDim2.new(1, 0, 0.5, 0)
 text.Position = UDim2.new(0, 0, 0.5, 0)
 text.Text = "By Wreston"
