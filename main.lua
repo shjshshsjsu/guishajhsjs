@@ -22,6 +22,7 @@ local toogle1 = Instance.new("TextButton")
 local uiCorner3 = Instance.new("UICorner")
 local tooglename = Instance.new("TextLabel")
 
+local slider = Instance.new("Slider")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -123,6 +124,14 @@ tooglename.Font = Enum.Font.SourceSans
 tooglename.TextColor3 = Color3.new(255, 255, 255)  
 tooglename.BackgroundTransparency = 1
 
+slider.Name = "slider"
+slider.Parent = Frame
+slider.Position = UDim2.new(0, 0, 0, 100)
+slider.Size = UDim2.new(1, 0, 0, 20)
+slider.MinValue = 0
+slider.MaxValue = 100
+slider.Value = sliderValue
+
 -- Yan Yana
 -- Button Yan Yana
 button1.Position = UDim2.new(0, 0, 0, 60)
@@ -187,5 +196,18 @@ Frame.InputChanged:Connect(function(input)
     if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
         dragInput = input
         updateInput(dragInput)
+    end
+end)
+-- Slider
+local sliderValue = 0
+
+local function updateSlider(value)
+    sliderValue = value
+end
+
+
+slider.Changed:Connect(function(property)
+    if property == "Value" then
+        updateSlider(slider.Value)
     end
 end)
