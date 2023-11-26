@@ -204,8 +204,7 @@ text.TextSize = 18
 
 notification.Enabled = true
 
-noficationframe:TweenSize(UDim2.new(0, 200, 0, 100), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.5, true)
-wait(5)
-noficationframe:TweenSize(UDim2.new(0, 200, 0, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.5, true)
+
+
 wait(0.5)
 notification:Destroy()
