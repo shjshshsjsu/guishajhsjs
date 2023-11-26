@@ -194,7 +194,6 @@ title.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Metin rengi
 title.Font = Enum.Font.SourceSansBold
 title.TextSize = 24
 
-local text = Instance.new("TextLabel")
 text.Parent = noficationframe
 text.Size = UDim2.new(1, 0, 0.5, 0)
 text.Position = UDim2.new(0, 0, 0.5, 0)
