@@ -22,7 +22,7 @@ local toogle1 = Instance.new("TextButton")
 local uiCorner3 = Instance.new("UICorner")
 local tooglename = Instance.new("TextLabel")
 
-local slider = Instance.new("Slider")
+local slider = Instance.new("UISlider")
 
 main.Name = "main"
 main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
