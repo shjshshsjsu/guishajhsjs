@@ -32,7 +32,8 @@ main.DisplayOrder = 999 -- Ekran düzenleme sırası
 
 Frame.Parent = main
 Frame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(1, 1, 1)
+Frame.BorderSizePixel = 2
 Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
 Frame.Size = UDim2.new(0.5, 0, 0.5, 0)
 Frame.Style = Enum.FrameStyle.RobloxRound
@@ -84,7 +85,8 @@ button1.Text = "Button 1"
 button1.TextSize = 20
 button1.TextColor3 = Color3.new(1, 1, 1)  
 uiCorner.Parent = button1 -- Kenarları Yumuşatma
-button1.BorderColor3 = Color3.new(255, 255, 255)
+button1.BorderColor3 = Color3.fromRGB(1, 1, 1)
+button1.BorderSizePixel = 2
 -- Button 2
 
 button2.Name = "Button2"
@@ -96,7 +98,8 @@ button2.Text = "Button 2"
 button2.TextSize = 20
 button2.TextColor3 = Color3.new(1, 1, 1)  
 uiCorner2.Parent = button2 -- Kenarları Yumuşatma
-button2.BorderColor3 = Color3.new(255, 255, 255)
+button2.BorderColor3 = Color3.fromRGB(1, 1, 1)
+button2.BorderSizePixel = 2
 
 toogle1.Name = "toogle1"
 toogle1.Parent = Frame
